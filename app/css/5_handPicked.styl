@@ -1,0 +1,89 @@
+.hand-picked
+  width 100%
+  min-height 1000px
+  padding-bottom 40px
+
+  &__collection
+    display flex
+    justify-content center
+    flex-wrap wrap
+    max-width 1290px
+    margin 0 auto
+
+  &__side
+    display flex
+    justify-content space-between
+    flex-direction column
+    margin: 0 12px
+
+  &__side-left
+    order 1
+    width 400px
+
+  &__side-right
+    order 3
+    width 400px
+
+  &__center
+    order 2
+    height auto
+    width 430px
+    padding: 5px 0
+
+  &__product
+    position relative
+    width  100%
+    height 400px
+    margin: 5px 0
+
+    img 
+      height 100%
+      width  100%
+      object-fit cover
+      object-position center top
+      font-family 'object-fit: cover; object-position: center top;'
+
+  &__button
+    position absolute
+    top 50%
+    left 50%
+    display none
+    width 160px
+    padding 15px 25px 15px 25px 
+    background-color #e6c37e
+    color #ffffff
+    text-align center
+    font-size 18px
+    font-weight bold
+    text-decoration none
+    text-shadow 0 0 2px #000
+    opacity 0
+    transform translate(-50%, -50%)
+    transition opacity .5s ease
+
+  &__overlay 
+    position absolute
+    top 50%
+    right 50%
+    display block
+    width 90%
+    height 90%
+    border 3px solid #fff
+    background rgba(0, 0, 0, 0)
+    font-family: "Lato", serif
+    transform translate(50%, -50%)
+    transition background .5s ease
+    &:hover, &:focus
+      background rgba(0, 0, 0, .3)
+      transition background .5s ease
+    &:hover .hand-picked__button
+      display block
+      opacity 1
+      transition:  opacity .5s ease
+
+  &__image
+    width 100%
+    height 100%
+    object-fit cover
+    object-position center top
+    font-family 'object-fit: cover; object-position: center top;'

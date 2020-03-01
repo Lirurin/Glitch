@@ -1,0 +1,83 @@
+.collection
+  width 100%
+  padding-bottom 40px
+
+  &__products
+    display flex
+    flex-wrap wrap
+    justify-content center
+    max-width 1290px
+    margin 0 auto
+
+  &__item
+    position relative
+    width 300px
+    height 350px
+    border-radius 10px
+    margin 7px
+    font-family 'Lato', serif
+    overflow hidden
+    &--discount
+      position absolute
+      z-index 1
+      top 0
+      left -125px
+      display block
+      height 40px
+      width 100%
+      border-radius 50%
+      background-color #e6c37e
+      color #ffffff
+      font-size 16px
+      line-height 40px
+      font-weight bold
+      text-align center
+      transform: rotate(-45deg)
+
+  &__overlay
+    position absolute
+    top 50%
+    right 50%
+    display block
+    width 90%
+    height 90%
+    border 3px solid rgba(0, 0, 0, 0)
+    background rgba(0, 0, 0, 0)
+    opacity 0
+    transition background .8s ease
+    transition border .8s ease
+    transition opacity .8s ease
+    border-radius 40px 0 80px 0
+    transform: translate(50%, -50%)
+    overflow hidden
+    &:hover
+      border 3px solid #000000
+      opacity 1
+      transition opacity .8s ease
+      transition border .8s ease
+    &:hover .collection__cart
+      opacity 1
+      transition opacity .8s ease
+
+  &__cart
+    position absolute
+    bottom 11px
+    right -46px
+    display block
+    width: 160px
+    height: 40px
+    background #000 url('../img/shopping-cart.svg') center center no-repeat
+    background-size 30px 30px
+    color #ffffff
+    font-size: 20px
+    font-weight: bold
+    text-decoration none
+    opacity 0
+    box-shadow: 0 0 13px 4px #000
+    transform rotate(-45deg)
+    transition background .5s ease,  opacity .8s ease
+
+  &__image
+    object-fit cover
+    object-position center top
+    font-family 'object-fit: cover; object-position: center top;'

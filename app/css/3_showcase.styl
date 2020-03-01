@@ -1,0 +1,75 @@
+.showcase
+  padding-top: 10vh
+
+  &__hidden
+    height 166px
+    transition height .2s ease-in
+
+  &__hidden-closed
+    height 68px
+    transition height .2s ease-in
+
+  &__slider
+    height: 90vh
+    // padding-top: 18vh
+
+  &__slider-wrap
+    display flex
+
+  &__slide
+    position relative
+
+  &__image
+    object-fit cover
+    object-position center top
+    font-family 'object-fit: cover; object-position: center top;'
+
+  &__sale
+    position absolute
+    z-index 10
+    top 50%
+    right 50%
+    width 260px
+    height 260px
+    border 2px solid #fff
+    background-color rgba(0 0 0 0.4)
+    color #ffffff
+    font-family 'Lato', serif
+    text-align center
+    transform: translate(50%, -50%) 
+
+  &__sale-season
+    margin 20px 0 20px 0
+    font-size 20px
+
+  &__sale-header
+    font-size 60px
+  
+  &__sale-discount 
+    font-size 32px
+      
+  &__pagination
+    display: flex
+    justify-content: center
+    padding-bottom: 10px
+
+  &__bullet
+    z-index -1
+    display block
+    width 14px
+    height 14px
+    border 2px solid rgba(255 255 255 0.5)
+    margin 0 10px
+    background-color rgba(255 255 255 0.5)
+    transform rotate(45deg)
+    transition background-color .2s ease-in
+    cursor pointer
+    &--current
+      background-color rgba(0 0 0 0.5)
+      transition background-color .2s ease-in
+
+.showcase-full
+  padding-top: 12vh
+  transition: 0.3s padding ease
+  &--load
+    padding-top: 12vh

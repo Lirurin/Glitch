@@ -1,0 +1,150 @@
+@media screen and (max-width 1300px)
+  .hand-picked
+    &__center
+      display none
+    &__side-left
+      order 1
+    &__side-right
+      order 2
+    &__product
+      margin: 12px 0 
+
+@media screen and (max-width 1200px)
+  .features
+    &__cont--left
+      order 2
+    &__cont--center
+      order 3
+      width 100%
+      margin: 15px
+    &__cont--right
+      order 1
+    &__cont--left::after
+      display none
+    &__cont--center::before
+      display none
+    &__cont--center::after
+      display none
+    &__cont--right::after
+      display none
+    
+@media screen and (max-width 992px)
+  .no-scroll
+    overflow hidden
+
+  .divider
+    &__line
+      width 50px
+    &__line
+      width 50px
+    &__text
+      width 150px
+      font-size: 24px
+
+  .about
+    &__logo
+      width 30%
+      margin: 10px
+
+  .header
+    &__nav
+      display none
+    &__arrow-hidden
+      display flex
+    &__hidden
+      display flex
+
+  .showcase
+    padding-top: 0
+    &__slider
+      height 100vh
+    &__hidden
+      display none
+
+  .footer
+    &__list
+      text-align center
+    &__social
+      width 100%
+      align-items center
+    &__chapter-social
+      margin-bottom: 20px
+    &__links
+      margin-top: 20px
+
+
+@media screen and (max-height 768px)
+  .about
+    &__logo
+      width 35%
+      margin: 10px
+
+@media screen and (max-height 500px)
+  .header
+    &__hidden-wrap
+      justify-content flex-start
+
+@media screen and (max-width 480px)
+  .hand-picked
+    &__collection
+      margin: 0 7px
+
+  .about
+    &__logo
+      width 70%
+      margin: 10px
+      
+  .collection
+    &__item 
+      width 90%
+      height auto
+      
+@media screen and (max-width 480px), screen and (max-height 360px)
+  .divider
+    &__text
+      width 150px
+
+    &__line
+      width 50px
+
+  .header
+    &__currency
+      height 30px
+      
+    &__account
+      ul 
+        li 
+          a
+            font-size 25px
+    &__menu
+      ul 
+        li
+          a
+            font-size 25px
+
+  .features
+    &__cont
+      &--center
+        width 300px
+        margin 10px
+        
+  .hand-picked
+    &__center
+      margin 15px 0 15px 0
+    &__side
+      align-items center
+      width 100%
+      height 100%
+      margin 0
+    &__product
+      width  100%
+      margin 15px 0 15px 0
+      img 
+        height 100%
+        width  100%
+        
+  .footer
+    &__social
+      width 310px
+    &__subscribe
+      width 300px

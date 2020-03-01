@@ -1,0 +1,142 @@
+
+@font-face 
+  font-family 'Lato'
+  src: url('../font/Lato-Regular.woff2') format('woff2'),
+          url('../font/Lato-Regular.woff') format('woff'),
+          url('../font/Lato-Regular.ttf')  format('truetype'),
+          url('../font/Lato-Regular.svg#svgFontName') format('svg')
+  font-weight normal
+  font-style normal
+  font-display swap 
+
+@font-face 
+  font-family 'earthorbiter'
+  src: url('../font/earthorbiter.woff2') format('woff2'),
+          url('../font/earthorbiter.woff') format('woff'),
+          url('../font/earthorbiter.ttf')  format('truetype'),
+          url('../font/earthorbiter.svg#svgFontName') format('svg')
+  font-weight normal
+  font-style normal
+  font-display swap 
+  
+@font-face 
+  font-family 'zekton'
+  src: url('../font/zektonrg.woff2') format('woff2'),
+          url('../font/zektonrg.woff') format('woff'),
+          url('../font/zektonrg.ttf')  format('truetype'),
+          url('../font/zektonrg.svg#svgFontName') format('svg')
+  font-weight normal
+  font-style normal
+  font-display swap
+
+@keyframes glitch-1
+  0% { clip: rect(6px, 9999px, 9px, 0) }
+  25% { clip: rect(5px, 9999px, 99px, 0) }
+  50% { clip: rect(0px, 9999px, 102px, 0) }
+  75% { clip: rect(3px, 9999px, 92px, 0) }
+  100% { clip: rect(9px, 9999px, 98px, 0) }
+
+@keyframes glitch-2
+  0% { top: -1px; left: 1px; clip: rect(65px, 9999px, 119px, 0) }
+  25% { top: -6px; left: 4px; clip: rect(79px, 9999px, 19px, 0) }
+  50% { top: -3px; left: 2px; clip: rect(68px, 9999px, 11px, 0) }
+  75% { top: 0px; left: -4px; clip: rect(95px, 9999px, 53px, 0) }
+  100% { top: -1px; left: -1px; clip: rect(31px, 9999px, 149px, 0) }
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html
+  background-color black
+  scroll-behavior smooth
+
+body
+  background-color #000000
+
+img 
+  width 100%
+  height 100%
+
+ul, li
+  list-style: none
+
+a 
+  text-decoration none
+
+.container
+  max-width 1290px
+
+.divider
+  display flex 
+  justify-content space-between
+  align-items center
+  max-width 1290px
+  height 80px
+  margin 0 auto 50px auto
+
+.divider__line
+  display block
+  width 300px
+  border 1px solid #e1cda8
+
+.divider__square
+  display block
+  width 15px
+  height 15px
+  background-color #e1cda8
+  transform rotate(45deg)
+
+.divider__text
+  color #fff
+  font-family "zekton", serif
+  font-size 30px
+  font-weight bold
+  text-align center
+
+.Logo
+  position relative
+  margin-top 30px
+  color #fff
+  font-family "earthorbiter", serif
+  font-size 72px
+  transform translate(0px, 0px)
+
+.glitch
+  position relative
+  color white
+  mix-blend-mode: lighten
+  &:before
+  &:after
+    content attr(data-text)
+    position absolute
+    top 0
+    width 100%
+    background black
+    clip: rect(0, 0, 0, 0)
+  &:before
+    left -5px
+    text-shadow 5px 0 rgba(red,0.7)
+  &:after
+    left 5px
+    text-shadow -5px 0 rgba(blue,0.7)
+  &.is-glitching
+    &:before
+      text-shadow 4px 0 rgba(red,0.7)
+      animation glitch-1 0.7s infinite ease-in-out alternate-reverse
+    &:after
+      text-shadow -5px 0 rgba(blue,0.7)
+      animation glitch-2 0.7s infinite ease-in-out alternate-reverse
+
+.poly-back
+  fill #000
+
+.poly-front
+  fill #fff
+
+.draggable
+  cursor pointer
+
+.no-scroll
+  overflow visible

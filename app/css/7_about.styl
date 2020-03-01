@@ -1,0 +1,80 @@
+.about
+  width 100%
+  overflow-x hidden
+
+  &__brands
+    display flex
+    justify-content center
+    flex-wrap wrap
+    align-items center
+    max-width 1290px
+    min-height 240px
+    margin 0 auto 40px auto
+
+  &__logo
+    margin 10px 40px
+    width 25%
+
+  &__arrow
+    position relative
+    width 100%
+    height 20px
+
+  &__arrow:after
+    content ""
+    position absolute
+    z-index 1
+    top 19px
+    left 50%
+    display block
+    border-top 50px solid #000
+    border-right 160px solid transparent
+    border-left 160px solid transparent
+    transform translateX(-50%)
+
+  &__reviews
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    width 100%
+    margin 0 auto
+    background-color #d9bf8f
+    font-family "zekton", serif
+
+  &__reviews-part
+    display flex
+    align-items flex-end
+    flex-wrap wrap
+    justify-content center
+    max-width 600px
+    height 100%
+    margin 20px 40px
+
+  &__reviews-text
+    width 300px
+    height 100%
+    &--right
+      text-align: right
+
+  &__reviews-quote
+    margin-bottom 50px
+    color #fff
+    font-size 30px
+
+  &__reviews-name
+    margin-bottom 25px
+    font-size 30px
+    font-weight bold
+
+  &__reviews-post
+    color #7f7a91
+    font-family "Lato"
+    font-size 14px
+    font-weight bold
+
+  &__image
+    width 230px
+    height 347px
+    &--rotate
+      transform scale(-1, 1)

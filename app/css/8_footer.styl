@@ -1,0 +1,97 @@
+.footer
+  display flex
+  justify-content center
+  align-items flex-start
+  flex-wrap wrap
+  width 100%
+  padding 50px 10px
+  background linear-gradient(180deg, #000000, #000000bd, #000000)
+  
+  &__map
+    display flex
+    justify-content center
+    flex-wrap wrap
+    height 100%
+
+  &__list
+    width 200px
+    margin-bottom 20px
+
+  &__chapter
+    font-family "Lato", serif
+    font-size 16px
+    font-weight bold
+    color #fff
+
+  &__links
+    margin-top 50px
+    list-style none
+    li 
+      a 
+        color #ffffff
+        line-height 30px
+        text-decoration none
+        cursor pointer
+
+  &__social
+    display flex
+    justify-content center
+    flex-direction column
+    height 100%
+    padding 5px
+
+  &__chapter-social
+    margin-bottom 40px
+    color #fff
+    font-size 16px
+    font-weight bold
+
+  &__links-wrap
+    display flex
+    margin-top: 10px
+    justify-content: flex-end
+    
+  &__links-item
+    display inline-block
+    width 30px
+    height 30px
+    border 1px solid #e6c37e
+    border-radius 50%
+    margin 4px
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 40%
+    color #000
+    &:nth-child(1)
+      background-image: url('../img/facebook.svg')
+    &:nth-child(2)
+      background-image: url('../img/twitter.svg')
+    &:nth-child(3)
+      background-image: url('../img/pinterest.svg')
+    &:nth-child(4)
+      background-image: url('../img/instagram.svg')
+
+  &__subscribe
+    display flex
+    align-items: center
+    width 310px
+    padding 2px 2px 2px 10px
+    border 1px #323030 solid
+    background-color #000
+
+  &__mail
+    width 65%
+
+  &__input
+    width 90%
+    height 40px
+    padding: 15px 10px
+    border none
+    background-color #000000
+    color #fff
+
+  &__submit
+    background-color #323030
+    color #fff
+    border none
+    padding 10px

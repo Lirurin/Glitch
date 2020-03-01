@@ -1,0 +1,298 @@
+.header
+  &__link-acc
+    display inline-block
+    width 140px
+    padding: 2 5px
+    border-left 1px solid #fff
+    border-right 1px solid #fff
+    color #fff
+
+  &__nav
+    position fixed
+    z-index 4
+    width 100%
+
+  &__cont
+    width 100%
+    border-bottom 1px solid #fff
+    background-color #000
+
+  &__topbar
+    display: flex
+    justify-content space-between
+    align-items center
+    flex-wrap wrap
+    max-width 1290px
+    height 35px
+    padding 0 10px
+    margin 0 auto
+    color #fff
+    font-family 'Lato', serif
+    font-size 10px
+    i
+      font-size 8px
+
+  &__account-top
+    font-size: 14px
+    text-transform uppercase
+    text-align center
+    li
+      display inline
+
+  &__contact-top
+    padding-left: 30px
+    background: url('../img/phone.svg') left center no-repeat
+    background-size: contain
+    font-size: 14px
+
+  &__bottom
+    height 10vh
+    min-height: 60px
+    background-color #000
+    font-family 'zekton', serif
+
+  &__menu-bottom
+    display flex
+    justify-content space-between
+    align-items center
+    max-width 1290px
+    height 100%
+    padding: 0 5px
+    margin 0 auto
+
+  &__menu-left
+    width 360px
+    li
+      display inline
+
+  &__menu-link
+    display inline-block
+    padding 0 11px
+    border-left: 1px solid #ffffff00
+    border-right: 1px solid #ffffff00
+    color #fff
+    font-size 18px
+    transition: border 0.3s ease
+    &:hover
+      border-left: 1px solid #ffffff
+      border-right: 1px solid #ffffff
+      transition: border 0.3s ease
+            
+  &__menu-right
+    width 360px
+    display flex
+    justify-content: flex-end
+
+  &__link-social
+    display inline-block
+    width 36px
+    height 36px
+    padding 8px 9px
+    border 2px solid #e6c37e
+    border-radius 20px
+    margin 6px
+    color #e6c37e
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 55%
+    &:nth-child(1)
+      background-image: url('../img/facebook.svg')
+    &:nth-child(2)
+      background-image: url('../img/twitter.svg')
+      background-size: 65%
+    &:nth-child(3)
+      background-image: url('../img/pinterest.svg')
+    &:nth-child(4)
+      background-image: url('../img/instagram.svg')
+      
+  &__arrow
+    position relative
+    z-index: -1
+    display flex
+    justify-content center
+    overflow hidden
+
+  &__arrow-vector
+    position relative
+    &:after, &:before 
+      content: ''
+      position: absolute
+      top: 0
+      display block
+      width 100vh
+      height 1px
+      background-color: #ffffff
+    &:after
+      left 100%
+    &:before
+      right 100%
+    svg
+      height 60px
+      width 400px
+      fill #000
+
+  &__arrow-border
+    display block
+    width 100%
+    border-top 1px solid #fff
+
+  &__hidden
+    position fixed
+    z-index 10
+    top -95vh
+    display none
+    flex-direction column
+    justify-content center
+    align-items center
+    width 100%
+    min-height: 95vh
+    background #000
+    transform-origin top
+    transition: top 0.5s ease
+
+  &__hidden-part
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    width 100%
+    margin 10px 0
+    color #fff
+
+  &__account
+    width 100%
+    font-family "zekton", serif
+    font-size: 30px;
+    text-transform uppercase
+    text-decoration none
+    text-align center
+    li
+      height 40px
+      a
+        display block
+        width 250px
+        border-right 5px solid #ffffff00
+        border-left 5px solid #ffffff00
+        margin 0 auto
+        color #fff
+        transition border 0.3s ease
+        &:hover
+          border-right 5px solid #fff
+          border-left 5px solid #fff
+          transition border 0.3s ease
+
+  &__menu
+    text-decoration none
+    font-family "zekton"
+    text-transform uppercase
+    text-align center
+    font-size: 30px;
+    width 100%
+    ul
+      width 100%
+      li
+        a
+          display block
+          width 250px
+          margin 0 auto
+          color #fff
+          text-decoration none
+          border-right 5px solid #ffffff00
+          border-left 5px solid #ffffff00
+          transition border 0.3s ease
+          &:hover
+            border-right 5px solid #fff
+            border-left 5px solid #fff
+            transition border 0.3s ease
+    
+  &__social
+    display flex
+    flex-wrap wrap
+    justify-content center
+    width 200px
+    margin-top: 20px
+
+  &__social-link
+    display inline-block
+    width 36px
+    height 36px
+    padding 8px 9px
+    border 2px solid #e6c37e
+    border-radius 20px
+    margin 6px
+    color #e6c37e
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 50%
+    &:nth-child(1)
+      background-image: url('../img/facebook.svg')
+    &:nth-child(2)
+      background-image: url('../img/twitter.svg')
+    &:nth-child(3)
+      background-image: url('../img/pinterest.svg')
+    &:nth-child(4)
+      background-image: url('../img/instagram.svg')
+
+  &__contact-wrap
+    padding-left: 30px
+    margin-top 20px
+    background: url('../img/phone.svg') left center no-repeat
+    background-size: contain
+    font-size 16px
+    
+  &__arrow-hidden
+    position absolute
+    z-index 2
+    bottom -39px
+    left 0
+    display none
+    justify-content center
+    width 100%
+    svg
+      width 300px
+      height 40px
+    
+  &__link-menu
+    height 40px
+    padding: 5px
+
+  &__hidden-wrap
+    position relative
+    display flex
+    flex-direction column
+    justify-content center
+    width 100%
+    height 95vh
+    padding 30px 0
+    border-bottom: 1px solid #ffffff
+    overflow auto
+    &:after
+      content ''
+      position absolute
+      top 0
+      left 0
+      display block
+      width 100%
+      height auto
+      box-shadow: 0 0 50px 0px #000 inset
+
+.sticky-Logo
+  z-index 2
+  margin-top: 10px
+  font-size 50px
+  transform translate(0px, 20px)
+  transition all 0.3s ease
+  &--load
+    z-index 2
+    font-size 50px
+    transform translate(0px, 20px)
+
+.sticky-bot
+  height 6vh
+  transition height 0.2s ease-in
+  &--load
+    height 6vh
+
+.menu-close
+  top 0vh
+  transition: top 0.5s ease

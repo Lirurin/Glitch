@@ -1,0 +1,97 @@
+.features
+  display flex
+  align-items center
+  width 100%
+  min-height 230px
+  margin-top: 30px
+  background-color #000
+  font-family 'Lato', serif
+  &:after
+    content ''
+    min-height inherit
+    font-size 0
+
+  &__cont
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    max-width 1290px
+    width 100%
+    height 100%
+    margin 0 auto
+    &--left
+      position relative
+      display flex
+      order 1
+      width 302px
+      height 100px
+      margin 16px 10px
+      background-color #e6c37e
+      &:after
+        content ""
+        position absolute
+        right -45px
+        display block
+        border-top 50px solid transparent
+        border-bottom 50px solid transparent
+        border-left 45px solid #e6c37e
+      .features__image
+        background: url('../img/plane.svg') center center no-repeat
+        background-size: 55%
+    &--center
+      display flex
+      flex-direction: column
+      align-items: center
+      order 2
+      width 400px
+      height 100px
+      padding: 8px 0
+      margin 10px 50px
+      background-color #000
+      span
+        color #fff
+    &--right
+      position relative
+      display flex
+      order 3
+      width 302px
+      height 100px
+      margin 16px 10px
+      background-color #e6c37e
+      &:after
+        content ""
+        position absolute
+        left -45px
+        display block
+        border-top 50px solid transparent
+        border-bottom 50px solid transparent
+        border-right  45px solid #e6c37e
+      .features__image
+        background: url('../img/settings.svg') center center no-repeat
+        background-size: 65%
+
+  &__image
+    width 30%
+    font-size 45px
+    line-height 100px
+    text-align center
+
+  &__text
+    width 70%
+    padding: 10px 0
+
+  &__header
+    display inline-block
+    width 100%
+    font-size 22px
+    line-height 50px
+    font-weight bold
+    text-align: center
+
+  &__info
+    display inline-block
+    width 100%
+    font-size 16px
+    font-weight bold
+    text-align: center
