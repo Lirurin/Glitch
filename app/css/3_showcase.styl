@@ -1,5 +1,6 @@
 .showcase
   padding-top: 10vh
+  padding-top: calc(var(--vh, 1vh) * 10)
 
   &__hidden
     height 166px
@@ -11,7 +12,7 @@
 
   &__slider
     height: 90vh
-    // padding-top: 18vh
+    height calc(var(--vh, 1vh) * 90)
 
   &__slider-wrap
     display flex
@@ -70,6 +71,8 @@
 
 .showcase-full
   padding-top: 12vh
+  padding-top: calc(var(--vh, 1vh) * 12)
   transition: 0.3s padding ease
   &--load
     padding-top: 12vh
+    calc(var(--vh, 1vh) * 100)

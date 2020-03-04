@@ -3,6 +3,14 @@ const objectFitImages = require('object-fit-images')
 const throttle = require('lodash.throttle')
 
 document.addEventListener('DOMContentLoaded', () => {
+    // mobile browsers vh fix
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+    
     const swiperImg = document.querySelectorAll('img.showcase__image'),
           collectionImg = document.querySelectorAll('.collection__image'),
           handPicked = document.querySelectorAll('.hand-picked img');
